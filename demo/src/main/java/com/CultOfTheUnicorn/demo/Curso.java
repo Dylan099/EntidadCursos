@@ -22,6 +22,14 @@ public class Curso {
         this.aula = aula;
     }
 
+    public String getHorario(){
+       return this.horario + " " + this.aula;
+    }
+    public void setHorario(String horario){
+       String[] parts = horario.split(" ");
+       this.horario = parts[0];
+        this.horario = parts[1];
+    }
     @Override
     public String toString(){
        return String.format(
