@@ -5,6 +5,7 @@ import org.springframework.hateoas.Resources;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.util.List;
@@ -59,8 +60,8 @@ public class CursoController {
                 });
     }
 
-    @DeleteMapping("/employees/{id}")
-    void deleteEmployee(@PathVariable Long id) {
+    @DeleteMapping("/Cursos/{id}")
+    void deleteCurso(@PathVariable Long id) {
         repository.deleteById(id);
     }
 
